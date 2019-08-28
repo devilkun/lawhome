@@ -55,7 +55,24 @@
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">数据集</span></td><td key=5></td></tr><tr key=0-2-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> file_id</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">文件ID</span></td><td key=5></td></tr>
                </tbody>
               </table>
-            
+
+### 示例
+
+```json
+{
+  "code": "200",
+  "msg": "登录成功",
+  "data": {
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NjY5ODQ0OTIsIm5iZiI6MTU2Njk4NDQ5MiwiZXhwIjoxNTY3MDA2MDkyLCJ1aWQiOjEsInJvbGUiOjF9.wQghsR18vzvRay7OrtXMEg640oiX--KcR8GNe6ULb-A",
+    "username": "admin",
+    "uid": 1,
+    "role_id": 1,
+    "role_name": "超级管理员",
+    "last_login_time": "2019-08-28"
+  }
+}
+```
+
 ## 用户登录
 <a id=用户登录> </a>
 ### 基本信息
@@ -95,7 +112,7 @@
               
 ### 示例
 
-```
+```json
 {
   "code": "200",
   "msg": "登录成功",
@@ -138,7 +155,19 @@
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> path</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">文件路径</span></td><td key=5></td></tr>
                </tbody>
               </table>
-            
+
+### 示例
+
+```json
+{
+  {
+    "code": "200",
+    "msg": "获取成功",
+    "path": "uploads/images/20190828/59d272714df4ac58bf5970f6613f68b1.jpg"
+}
+}
+```
+
 # 用户管理
 
 ## 用户列表
