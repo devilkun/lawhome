@@ -60,16 +60,9 @@
 
 ```json
 {
-  "code": "200",
-  "msg": "登录成功",
-  "data": {
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NjY5ODQ0OTIsIm5iZiI6MTU2Njk4NDQ5MiwiZXhwIjoxNTY3MDA2MDkyLCJ1aWQiOjEsInJvbGUiOjF9.wQghsR18vzvRay7OrtXMEg640oiX--KcR8GNe6ULb-A",
-    "username": "admin",
-    "uid": 1,
-    "role_id": 1,
-    "role_name": "超级管理员",
-    "last_login_time": "2019-08-28"
-  }
+    "code": "200",
+    "msg": "获取成功",
+    "path": "uploads/images/20190828/59d272714df4ac58bf5970f6613f68b1.jpg"
 }
 ```
 
@@ -164,7 +157,7 @@
     "code": "200",
     "msg": "获取成功",
     "path": "uploads/images/20190828/59d272714df4ac58bf5970f6613f68b1.jpg"
-}
+  }
 }
 ```
 
