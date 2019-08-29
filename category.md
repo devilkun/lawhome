@@ -288,20 +288,17 @@
 {
     "code": "200",
     "msg": "获取成功",
-    "data": {
-        "totalSize": 1,
-        "currentPage": 1,
-        "pageSize": 10,
-        "totalPage": 1,
-        "list": [
-            {
-                "id": 1,
-                "name": "劳动工伤",
-                "summary_title": "劳动工伤法律咨询服务介绍",
-                "summary_content": "法律内容法律内容法律内容法律内容法律内容法律内容法律内容法律内容法律内容法律内容法律内容法律内律内律内容法律内容法律内容法律",
-                "create_time": "2019-08-29"
-            }
-        ]
-    }
+    "data": [
+        {
+            "id": 1,
+            "name": "劳动工伤",
+            "children": [
+                {
+                    "id": 2,
+                    "name": "劳动纠纷"
+                }
+            ]
+        }
+    ]
 }
 ```
