@@ -17,6 +17,7 @@
 | 参数名称  | 参数值  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | web-token  |   | 是  |   |  token 令牌 |
+
 **Query**
 
 | 参数名称  |  是否必须 | 示例  | 备注  |
@@ -33,6 +34,34 @@
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">数据集</span></td><td key=5></td></tr><tr key=0-2-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> totalSize</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">总条数</span></td><td key=5></td></tr><tr key=0-2-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> currentPage</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">当前页码</span></td><td key=5></td></tr><tr key=0-2-2><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> pageSize</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">每页条数</span></td><td key=5></td></tr><tr key=0-2-3><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> totalPage</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">总页码</span></td><td key=5></td></tr><tr key=0-2-4><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> list</span></td><td key=1><span>object []</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">列表项</span></td><td key=5><p key=3><span style="font-weight: '700'">item 类型: </span><span>object</span></p></td></tr><tr key=0-2-4-0><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> id</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">分类ID</span></td><td key=5></td></tr><tr key=0-2-4-1><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> name</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">分类名称</span></td><td key=5></td></tr><tr key=0-2-4-2><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> create_time</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">创建时间</span></td><td key=5></td></tr>
                </tbody>
               </table>
+              
+### 示例
+
+```json
+{
+    "code": "200",
+    "msg": "获取成功",
+    "data": {
+        "totalSize": 2,
+        "currentPage": 1,
+        "pageSize": 10,
+        "totalPage": 1,
+        "list": [
+            {
+                "id": 7,
+                "name": "刑事辩护",
+                "create_time": "2019-08-22"
+            },
+            {
+                "id": 3,
+                "name": "婚姻家庭",
+                "create_time": "2019-08-22"
+            }
+        ]
+    }
+}
+```
+
             
 ## 删除分类
 <a id=删除分类> </a>
@@ -52,6 +81,7 @@
 | 参数名称  | 参数值  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | web-token  |   | 是  |   |  token 令牌 |
+
 **Query**
 
 | 参数名称  |  是否必须 | 示例  | 备注  |
@@ -68,7 +98,16 @@
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr>
                </tbody>
               </table>
-            
+              
+### 示例
+
+```json
+{
+    "code": "200",
+    "msg": "删除成功"
+}
+```
+
 ## 添加分类
 <a id=添加分类> </a>
 ### 基本信息
@@ -87,6 +126,7 @@
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | Content-Type  |  application/x-www-form-urlencoded | 是  |   |   |
 | web-token  |   | 是  |   |  token 令牌 |
+
 **Body**
 
 | 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
@@ -107,7 +147,16 @@
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr>
                </tbody>
               </table>
-            
+              
+### 示例
+
+```json
+{
+    "code": "200",
+    "msg": "添加成功"
+}
+```
+
 ## 编辑分类
 <a id=编辑分类> </a>
 ### 基本信息
@@ -126,6 +175,7 @@
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | Content-Type  |  application/x-www-form-urlencoded | 是  |   |   |
 | web-token  |   | 是  |   |  token 令牌 |
+
 **Body**
 
 | 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
@@ -145,7 +195,16 @@
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr>
                </tbody>
               </table>
-            
+              
+### 示例
+
+```json
+{
+    "code": "200",
+    "msg": "编辑成功"
+}
+```
+
 ## 获取分类
 <a id=获取分类> </a>
 ### 基本信息
@@ -163,6 +222,7 @@
 | 参数名称  | 参数值  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | web-token  |   | 是  |   |  token 令牌 |
+
 **Query**
 
 | 参数名称  |  是否必须 | 示例  | 备注  |
@@ -179,6 +239,19 @@
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">数据集</span></td><td key=5></td></tr><tr key=0-2-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> id</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">分类ID</span></td><td key=5></td></tr><tr key=0-2-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> name</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">分类名称</span></td><td key=5></td></tr>
                </tbody>
               </table>
+              
+###
+
+```json
+{
+    "code": "200",
+    "msg": "获取成功",
+    "data": {
+        "id": 3,
+        "name": "婚姻家庭"
+    }
+}
+```
             
 ## 获取分类联动列表
 <a id=获取分类联动列表> </a>
@@ -208,3 +281,46 @@
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">数据集</span></td><td key=5></td></tr><tr key=0-2-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> id</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">分类ID</span></td><td key=5></td></tr><tr key=0-2-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> name</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">分类名称</span></td><td key=5></td></tr><tr key=0-2-2><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> children</span></td><td key=1><span>object []</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">二级分类</span></td><td key=5><p key=3><span style="font-weight: '700'">item 类型: </span><span>object</span></p></td></tr><tr key=0-2-2-0><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> id</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">二级分类ID</span></td><td key=5></td></tr><tr key=0-2-2-1><td key=0><span style="padding-left: 40px"><span style="color: #8c8a8a">├─</span> name</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">二级分类名称</span></td><td key=5></td></tr>
                </tbody>
               </table>
+
+### 示例
+
+```json
+{
+    "code": "200",
+    "msg": "获取成功",
+    "data": [
+        {
+            "id": 3,
+            "name": "婚姻家庭",
+            "children": [
+                {
+                    "id": 4,
+                    "name": "婚姻"
+                },
+                {
+                    "id": 5,
+                    "name": "离婚"
+                },
+                {
+                    "id": 6,
+                    "name": "财产分割"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "刑事辩护",
+            "children": [
+                {
+                    "id": 8,
+                    "name": "刑事"
+                },
+                {
+                    "id": 9,
+                    "name": "辩护"
+                }
+            ]
+        }
+    ]
+}
+```
