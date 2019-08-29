@@ -17,4 +17,4 @@
 
 #### [通用文档](https://github.com/devilkun/lawhome/blob/master/common.md)
 
-#### [用户管理](https://github.com/devilkun/lawhome/blob/master/common.md)
+#### [用户管理](https://github.com/devilkun/lawhome/blob/master/manage.md)
