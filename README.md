@@ -17,7 +17,11 @@
 
 #### [通用文档](https://github.com/devilkun/lawhome/blob/master/common.md)
 
-#### [用户管理](https://github.com/devilkun/lawhome/blob/master/manage.md)
+#### [用户管理](https://github.com/devilkun/lawhome/blob/master/user.md)
+
+#### [角色管理](https://github.com/devilkun/lawhome/blob/master/role.md)
+
+#### [节点管理](https://github.com/devilkun/lawhome/blob/master/node.md)
 
 #### [法律资讯分类（知识，专题，百科）](https://github.com/devilkun/lawhome/blob/master/category.md)
 
