@@ -62,52 +62,6 @@
 }
 ```
 
-            
-## 删除分类
-<a id=删除分类> </a>
-### 基本信息
-
-**Path：** /category/delete
-
-**Method：** GET
-
-**接口描述：**
-<p>若一级分类拥有二级分类的无法被删除</p>
-
-
-### 请求参数
-**Headers**
-
-| 参数名称  | 参数值  |  是否必须 | 示例  | 备注  |
-| ------------ | ------------ | ------------ | ------------ | ------------ |
-| web-token  |   | 是  |   |  token 令牌 |
-
-**Query**
-
-| 参数名称  |  是否必须 | 示例  | 备注  |
-| ------------ | ------------ | ------------ | ------------ |
-| id | 是  |   |  分类ID |
-
-### 返回数据
-
-<table>
-  <thead class="ant-table-thead">
-    <tr>
-      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
-    </tr>
-  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr>
-               </tbody>
-              </table>
-              
-### 示例
-
-```json
-{
-    "code": "200",
-    "msg": "删除成功"
-}
-```
-
 ## 添加分类
 <a id=添加分类> </a>
 ### 基本信息
@@ -202,6 +156,51 @@
 {
     "code": "200",
     "msg": "编辑成功"
+}
+```
+
+## 删除分类
+<a id=删除分类> </a>
+### 基本信息
+
+**Path：** /category/delete
+
+**Method：** GET
+
+**接口描述：**
+<p>若一级分类拥有二级分类的无法被删除</p>
+
+
+### 请求参数
+**Headers**
+
+| 参数名称  | 参数值  |  是否必须 | 示例  | 备注  |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| web-token  |   | 是  |   |  token 令牌 |
+
+**Query**
+
+| 参数名称  |  是否必须 | 示例  | 备注  |
+| ------------ | ------------ | ------------ | ------------ |
+| id | 是  |   |  分类ID |
+
+### 返回数据
+
+<table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr>
+               </tbody>
+              </table>
+              
+### 示例
+
+```json
+{
+    "code": "200",
+    "msg": "删除成功"
 }
 ```
 
