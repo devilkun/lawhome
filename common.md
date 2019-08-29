@@ -99,7 +99,7 @@
 ```json
 {
     "code": "200",
-    "msg": "获取成功",
+    "msg": "上传成功",
     "path": "uploads/images/20190828/59d272714df4ac58bf5970f6613f68b1.jpg"
 }
 ```
