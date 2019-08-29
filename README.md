@@ -33,7 +33,7 @@
 
 #### [法律百科](https://github.com/devilkun/lawhome/blob/master/encyclopedia.md)[2019/8/29 13:58]
 
-#### [法律法规](https://github.com/devilkun/lawhome/blob/master/regulation.md)[2019/8/29 13:35]
+#### [法律法规](https://github.com/devilkun/lawhome/blob/master/regulation.md)[2019/8/29 14:51]
 
 #### [刑法罪名库](https://github.com/devilkun/lawhome/blob/master/crime.md)[2019/8/29 13:35]
 
