@@ -25,7 +25,7 @@
 
 #### [法律资讯分类（知识，专题，百科）](https://github.com/devilkun/lawhome/blob/master/category.md)[2019/8/29 13:35]
 
-#### [法律文档类型（法规，罪名库，文书，合同范本）](https://github.com/devilkun/lawhome/blob/master/type.md)[2019/8/29 13:35]
+#### [法律文档类型（法规，罪名库，文书，合同范本）](https://github.com/devilkun/lawhome/blob/master/type.md)[2019/8/29 14:21]
 
 #### [法律知识](https://github.com/devilkun/lawhome/blob/master/knowledge.md)[2019/8/29 13:35]
 
