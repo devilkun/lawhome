@@ -13,7 +13,7 @@
 法律知识&nbsp; &nbsp;法律专题&nbsp; &nbsp;法律百科</p>
 <p><br data-tomark-pass=""><br>
 法律文档类型隶属:<br>
-法律法规&nbsp; &nbsp;法律罪名库&nbsp; &nbsp;法律文书&nbsp; &nbsp;合同范本</p>
+法律法规&nbsp; &nbsp;刑法罪名库&nbsp; &nbsp;法律文书&nbsp; &nbsp;合同范本</p>
 
 #### [通用文档](https://github.com/devilkun/lawhome/blob/master/common.md)
 
