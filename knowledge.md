@@ -17,6 +17,7 @@
 | 参数名称  | 参数值  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | web-token  |   | 是  |   |  token 令牌 |
+
 **Query**
 
 | 参数名称  |  是否必须 | 示例  | 备注  |
@@ -36,7 +37,65 @@
                </tbody>
               </table>
             
-            
+### 示例
+
+```json
+{
+    "code": "200",
+    "msg": "获取成功",
+    "data": {
+        "totalSize": 6,
+        "currentPage": 1,
+        "pageSize": 10,
+        "totalPage": 1,
+        "list": [
+            {
+                "id": 6,
+                "title": "用人单位可以强制安排加班吗",
+                "parent": "劳动工伤",
+                "child": "劳动纠纷",
+                "create_time": "2019-08-29"
+            },
+            {
+                "id": 5,
+                "title": "单位规章制度对员工有效吗",
+                "parent": "劳动工伤",
+                "child": "劳动纠纷",
+                "create_time": "2019-08-29"
+            },
+            {
+                "id": 4,
+                "title": "超期限未申报工伤诉讼时效中止多久？",
+                "parent": "劳动工伤",
+                "child": "劳动纠纷",
+                "create_time": "2019-08-29"
+            },
+            {
+                "id": 3,
+                "title": "从公司辞职需要交违约金吗",
+                "parent": "劳动工伤",
+                "child": "劳动纠纷",
+                "create_time": "2019-08-29"
+            },
+            {
+                "id": 2,
+                "title": "安排加班超过多久算违法",
+                "parent": "劳动工伤",
+                "child": "劳动纠纷",
+                "create_time": "2019-08-29"
+            },
+            {
+                "id": 1,
+                "title": "公司加班多少小时违法？",
+                "parent": "劳动工伤",
+                "child": "劳动纠纷",
+                "create_time": "2019-08-29"
+            }
+        ]
+    }
+}
+```
+
 ## 添加法律知识
 <a id=添加法律知识> </a>
 ### 基本信息
@@ -55,6 +114,7 @@
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | Content-Type  |  application/x-www-form-urlencoded | 是  |   |   |
 | web-token  |   | 是  |   |  token 令牌 |
+
 **Body**
 
 | 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
@@ -63,7 +123,7 @@
 | title | text  |  是 |    |  法律知识标题 |
 | content | text  |  是 |    |  知识详情 |
 | picture_id | text  |  否 |    |  图片ID |
-
+| is_suggest | text  |  否 |    |  是否推荐 |
 
 
 ### 返回数据
@@ -76,7 +136,15 @@
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr>
                </tbody>
               </table>
-            
+
+### 示例
+```json
+{
+    "code": "200",
+    "msg": "添加分类成功"
+}
+```
+
 ## 编辑法律知识
 <a id=编辑法律知识> </a>
 ### 基本信息
@@ -95,6 +163,7 @@
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | Content-Type  |  application/x-www-form-urlencoded | 是  |   |   |
 | web-token  |   | 是  |   |  token 令牌 |
+
 **Body**
 
 | 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
@@ -103,7 +172,8 @@
 | cid | text  |  是 |    |  法律知识二级分类ID |
 | title | text  |  是 |    |  法律知识文章标题 |
 | content | text  |  是 |    |  法律知识详情 |
-| picture_id | text  |  否 |    |  图片ID |
+| picture_id | text  |  是 |    |  图片ID |
+| is_suggest | text  |  是 |    |  是否推荐 |
 
 
 
@@ -117,6 +187,16 @@
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr>
                </tbody>
               </table>
+
+### 示例
+
+```json
+{
+    "code": "200",
+    "msg": "添加分类成功"
+}
+```
+
 ## 删除法律知识
 <a id=删除法律知识> </a>
 ### 基本信息
@@ -134,6 +214,7 @@
 | 参数名称  | 参数值  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | web-token  |   | 是  |   |  token 令牌 |
+
 **Query**
 
 | 参数名称  |  是否必须 | 示例  | 备注  |
@@ -150,9 +231,15 @@
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr>
                </tbody>
               </table>
-            
 
-            
+### 示例
+```json
+{
+    "code": "200",
+    "msg": "添加分类成功"
+}
+```
+          
 ## 获取法律知识
 <a id=获取法律知识> </a>
 ### 基本信息
@@ -170,6 +257,7 @@
 | 参数名称  | 参数值  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | web-token  |   | 是  |   |  token 令牌 |
+
 **Query**
 
 | 参数名称  |  是否必须 | 示例  | 备注  |
@@ -186,3 +274,22 @@
   </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">数据集</span></td><td key=5></td></tr><tr key=0-2-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> id</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">文章ID</span></td><td key=5></td></tr><tr key=0-2-1><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> title</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">文章标题</span></td><td key=5></td></tr><tr key=0-2-2><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> path</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">图片路径</span></td><td key=5></td></tr><tr key=0-2-3><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> content</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">知识详情</span></td><td key=5></td></tr><tr key=0-2-4><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> first_cid</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">一级分类ID</span></td><td key=5></td></tr><tr key=0-2-5><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> picture_id</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">图片ID</span></td><td key=5></td></tr><tr key=0-2-6><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> second_cid</span></td><td key=1><span>number</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">二级分类ID</span></td><td key=5></td></tr>
                </tbody>
               </table>
+
+### 示例
+
+```json
+{
+    "code": "200",
+    "msg": "获取成功",
+    "data": {
+        "id": 1,
+        "title": "公司加班多少小时违法？",
+        "picture_id": 0,
+        "path": null,
+        "content": "一、公司加班多少小时违法\n\n每月加班不得超过三十六小时。所以，要是每月加班时间累计超过了36个小时的，那么就是对《劳动合同法》的违反。\n\n根据《中华人民共和国劳动合同法》中规定：\n\n第三十六条：国家实行劳动者每日工作时间不超过八小时、平均每周工作时间不超过四十四小时的工时制度。\n\n第四十一条：用人单位由于生产经营需要，经与工会和劳动者协商后可以延长工作时间，一般每日不得超过一小时;因特殊原因需要延长工作时间的，在保障劳动者身体健康的条件下延长工作时间每日不得超过三小时，但是每月不得超过三十六小时。\n\n二、劳动合同如何约定加班工资?\n\n《劳动法》第四十四条规定：有下列情形之一的，用人单位应当按照下列标准支付高于劳动者正常工作时间工资的工资报酬：\n\n(一)安排劳动者延长时间的，支付不低于工资的百分之一百五十的工资报酬;\n\n(二)休息日安排劳动者工作又不能安排补休的，支付不低于工资的百分之二百的工资报酬;\n\n(三)法定休假日安排劳动者工作的，支付不低于工资的百分之三百的工资报酬。\n\n因此，若劳动合同中约定的加班工资高于《劳动法》第四十四条规定的最低加班工资支付标准，该约定有效;若该约定低于本法规定的最低加班工资支付标准的，该约定无效。约定无效时，用人单位应当按不低于本法规定的最低加班工资支付标准的向劳动者支付加班工资。\n\n对于单位安排劳动者加班的时间，其实在《劳动合同法》当中是由明确限制的，一个月内单位安排劳动者加班的时间最多不能超过36个小时，若超过的话则就属于违法行为，那么用人单位就要承担因此带来的法律责任。而单位安排劳动者加班的，也需要按照规定支付相应的加班工资，而在周末安排加班的话，也可以安排之后调休。",
+        "is_suggest": 0,
+        "first_cid": 1,
+        "second_cid": 2
+    }
+}
+```
