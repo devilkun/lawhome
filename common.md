@@ -1,53 +1,5 @@
 # 通用接口
 
-## 文件上传
-<a id=文件上传> </a>
-### 基本信息
-
-**Path：** /common/uploads
-
-**Method：** POST
-
-**接口描述：**
-
-
-### 请求参数
-**Headers**
-
-| 参数名称  | 参数值  |  是否必须 | 示例  | 备注  |
-| ------------ | ------------ | ------------ | ------------ | ------------ |
-| Content-Type  |  multipart/form-data | 是  |   |   |
-
-
-**Body**
-
-| 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
-| ------------ | ------------ | ------------ | ------------ | ------------ |
-| file | file  |  是 |    |  上传文件 |
-
-
-
-### 返回数据
-
-<table>
-  <thead class="ant-table-thead">
-    <tr>
-      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
-    </tr>
-  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">数据集</span></td><td key=5></td></tr><tr key=0-2-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> file_id</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">文件ID</span></td><td key=5></td></tr>
-               </tbody>
-              </table>
-
-### 示例
-
-```json
-{
-    "code": "200",
-    "msg": "获取成功",
-    "path": "uploads/images/20190828/59d272714df4ac58bf5970f6613f68b1.jpg"
-}
-```
-
 ## 用户登录
 <a id=用户登录> </a>
 ### 基本信息
@@ -101,6 +53,54 @@
     "role_name": "超级管理员",
     "last_login_time": "2019-08-28"
   }
+}
+```
+
+## 文件上传
+<a id=文件上传> </a>
+### 基本信息
+
+**Path：** /common/uploads
+
+**Method：** POST
+
+**接口描述：**
+
+
+### 请求参数
+**Headers**
+
+| 参数名称  | 参数值  |  是否必须 | 示例  | 备注  |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| Content-Type  |  multipart/form-data | 是  |   |   |
+
+
+**Body**
+
+| 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| file | file  |  是 |    |  上传文件 |
+
+
+
+### 返回数据
+
+<table>
+  <thead class="ant-table-thead">
+    <tr>
+      <th key=name>名称</th><th key=type>类型</th><th key=required>是否必须</th><th key=default>默认值</th><th key=desc>备注</th><th key=sub>其他信息</th>
+    </tr>
+  </thead><tbody className="ant-table-tbody"><tr key=0-0><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> code</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码</span></td><td key=5></td></tr><tr key=0-1><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> msg</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">返回码信息</span></td><td key=5></td></tr><tr key=0-2><td key=0><span style="padding-left: 0px"><span style="color: #8c8a8a"></span> data</span></td><td key=1><span>object</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">数据集</span></td><td key=5></td></tr><tr key=0-2-0><td key=0><span style="padding-left: 20px"><span style="color: #8c8a8a">├─</span> file_id</span></td><td key=1><span>string</span></td><td key=2>必须</td><td key=3></td><td key=4><span style="white-space: pre-wrap">文件ID</span></td><td key=5></td></tr>
+               </tbody>
+              </table>
+
+### 示例
+
+```json
+{
+    "code": "200",
+    "msg": "获取成功",
+    "path": "uploads/images/20190828/59d272714df4ac58bf5970f6613f68b1.jpg"
 }
 ```
 
