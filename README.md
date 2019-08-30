@@ -15,28 +15,28 @@
 法律文档类型隶属:<br>
 法律法规&nbsp; &nbsp;刑法罪名库&nbsp; &nbsp;法律文书&nbsp; &nbsp;合同范本</p>
 
-#### [通用文档](https://github.com/devilkun/lawhome/blob/master/common.md)[2019/8/29 13:35]
+#### [通用文档](https://github.com/devilkun/lawhome/blob/master/docs/common.md)[2019/8/29 13:35]
 
-#### [用户管理](https://github.com/devilkun/lawhome/blob/master/user.md)[2019/8/29 13:35]
+#### [用户管理](https://github.com/devilkun/lawhome/blob/master/docs/user.md)[2019/8/29 13:35]
 
-#### [角色管理](https://github.com/devilkun/lawhome/blob/master/role.md)[2019/8/29 13:35]
+#### [角色管理](https://github.com/devilkun/lawhome/blob/master/docs/role.md)[2019/8/29 13:35]
 
-#### [节点管理](https://github.com/devilkun/lawhome/blob/master/node.md)[2019/8/29 13:35]
+#### [节点管理](https://github.com/devilkun/lawhome/blob/master/docs/node.md)[2019/8/29 13:35]
 
-#### [法律资讯分类（法律知识，法律专题，法律百科）](https://github.com/devilkun/lawhome/blob/master/category.md)[2019/8/29 13:35]
+#### [法律资讯分类（法律知识，法律专题，法律百科）](https://github.com/devilkun/lawhome/blob/master/docs/category.md)[2019/8/29 13:35]
 
-#### [法律文档类型（法规法规，刑法罪名库，法律文书，合同范本）](https://github.com/devilkun/lawhome/blob/master/type.md)[2019/8/29 14:21]
+#### [法律文档类型（法规法规，刑法罪名库，法律文书，合同范本）](https://github.com/devilkun/lawhome/blob/master/docs/type.md)[2019/8/29 14:21]
 
-#### [法律知识](https://github.com/devilkun/lawhome/blob/master/knowledge.md)[2019/8/29 13:35]
+#### [法律知识](https://github.com/devilkun/lawhome/blob/master/docs/knowledge.md)[2019/8/29 13:35]
 
-#### [法律专题](https://github.com/devilkun/lawhome/blob/master/subject.md)[2019/8/29 13:35]
+#### [法律专题](https://github.com/devilkun/lawhome/blob/master/docs/subject.md)[2019/8/29 13:35]
 
-#### [法律百科](https://github.com/devilkun/lawhome/blob/master/encyclopedia.md)[2019/8/29 13:58]
+#### [法律百科](https://github.com/devilkun/lawhome/blob/master/docs/encyclopedia.md)[2019/8/29 13:58]
 
-#### [法律法规](https://github.com/devilkun/lawhome/blob/master/regulation.md)[2019/8/29 14:51]
+#### [法律法规](https://github.com/devilkun/lawhome/blob/master/docs/regulation.md)[2019/8/29 14:51]
 
-#### [刑法罪名库](https://github.com/devilkun/lawhome/blob/master/crime.md)[2019/8/29 15:09]
+#### [刑法罪名库](https://github.com/devilkun/lawhome/blob/master/docs/crime.md)[2019/8/29 15:09]
 
-#### [法律文书](https://github.com/devilkun/lawhome/blob/master/instrument.md)[2019/8/29 15:18]
+#### [法律文书](https://github.com/devilkun/lawhome/blob/master/docs/instrument.md)[2019/8/29 15:18]
 
-#### [合同范本](https://github.com/devilkun/lawhome/blob/master/contract.md)[2019/8/29 15:30]
+#### [合同范本](https://github.com/devilkun/lawhome/blob/master/docs/contract.md)[2019/8/29 15:30]
