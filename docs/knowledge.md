@@ -119,11 +119,11 @@
 
 | 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
-| cid | text  |  是 |    |  分类ID（仅需提供二级分类ID即可） |
+| cid | number  |  是 |    |  分类ID（仅需提供二级分类ID即可） |
 | title | text  |  是 |    |  法律知识标题 |
 | content | text  |  是 |    |  知识详情 |
-| picture_id | text  |  否 |    |  图片ID |
-| is_suggest | text  |  否 |    |  是否推荐 |
+| picture_id | number  |  否 |    |  图片ID |
+| is_suggest | boolean  |  否 |    |  是否推荐 |
 
 
 ### 返回数据
@@ -168,12 +168,12 @@
 
 | 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
-| id | text  |  是 |    |  法律知识文章ID |
-| cid | text  |  是 |    |  法律知识二级分类ID |
+| id | number  |  是 |    |  法律知识文章ID |
+| cid | number  |  是 |    |  法律知识二级分类ID |
 | title | text  |  是 |    |  法律知识文章标题 |
 | content | text  |  是 |    |  法律知识详情 |
-| picture_id | text  |  是 |    |  图片ID |
-| is_suggest | text  |  是 |    |  是否推荐 |
+| picture_id | number  |  是 |    |  图片ID |
+| is_suggest | boolean  |  是 |    |  是否推荐 |
 
 
 
