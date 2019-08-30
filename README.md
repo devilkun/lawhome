@@ -15,7 +15,7 @@
 法律文档类型隶属:<br>
 法律法规&nbsp; &nbsp;刑法罪名库&nbsp; &nbsp;法律文书&nbsp; &nbsp;合同范本</p>
 
-#### [通用文档](https://github.com/devilkun/lawhome/blob/master/docs/common.md)[2019/8/29 13:35]
+#### [通用接口](https://github.com/devilkun/lawhome/blob/master/docs/common.md)[2019/8/29 13:35]
 
 #### [用户管理](https://github.com/devilkun/lawhome/blob/master/docs/user.md)[2019/8/29 13:35]
 
