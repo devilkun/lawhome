@@ -24,12 +24,12 @@
 | 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | node_name | text  |  是 |    |  节点名称 |
-| pid | text  |  是 |    |  所属节点 |
+| pid | number  |  是 |    |  所属节点 |
 | icon | text  |  否 |    |  顶级节点菜单项需要提供图标 |
 | control_name | text  |  是 |    |  控制器名称（后端） |
 | action_name | text  |  是 |    |  方法名称（后端） |
 | router_name | text  |  是 |    |  路由名称（前端） |
-| is_menu | text  |  否 |    |  是否为菜单项（0不是 1是 默认为0） |
+| is_menu | text  |  number |    |  是否为菜单项（0不是 1是 默认为0） |
 
 
 
@@ -77,13 +77,13 @@
 | 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | node_name | text  |  是 |    |  节点名称 |
-| node_id | text  |  是 |    |  节点ID |
-| pid | text  |  是 |    |  所属节点ID |
+| node_id | number  |  是 |    |  节点ID |
+| pid | number  |  是 |    |  所属节点ID |
 | icon | text  |  否 |    |  顶级菜单需要提供菜单图标 |
 | control_name | text  |  是 |    |  控制器名称（后端） |
 | action_name | text  |  是 |    |  方法名称（后端） |
 | router_name | text  |  是 |    |  路由名称（前端） |
-| is_menu | text  |  否 |    |  是否为菜单项（0不是 1 是 默认为0） |
+| is_menu | number  |  否 |    |  是否为菜单项（0不是 1 是 默认为0） |
 
 
 
