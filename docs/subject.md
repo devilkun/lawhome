@@ -118,11 +118,11 @@
 
 | 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
-| cid | text  |  是 |    |  分类二级ID |
+| cid | number  |  是 |    |  分类二级ID |
 | title | text  |  是 |    |  法律专题主标题 |
 | summary | text  |  是 |    |  法律专题简介 |
-| picture_id | text  |  否 |    |  图片ID |
-| relate_ids | text  |  否 |    |  关联法律知识ID集合(使用','拼接法律知识ID) |
+| picture_id | number  |  否 |    |  图片ID |
+| relate_ids | string  |  否 |    |  关联法律知识ID集合(使用','拼接法律知识ID) |
 
 
 
@@ -169,12 +169,12 @@
 
 | 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
-| id | text  |  是 |    |  法律专题文章ID |
-| cid | text  |  是 |    |  二级分类ID |
+| id | number  |  是 |    |  法律专题文章ID |
+| cid | number  |  是 |    |  二级分类ID |
 | title | text  |  是 |    |  法律专题主标题 |
 | summary | text  |  是 |    |  法律专题简介 |
-| picture_id | text  |  否 |    |  图片ID |
-| relate_ids | text  |  否 |    |  关联法律知识ID集合(使用','拼接法律知识ID) |
+| picture_id | number  |  否 |    |  图片ID |
+| relate_ids | string  |  否 |    |  关联法律知识ID集合(使用','拼接法律知识ID) |
 
 
 
