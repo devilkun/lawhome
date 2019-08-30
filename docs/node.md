@@ -29,7 +29,7 @@
 | control_name | text  |  是 |    |  控制器名称（后端） |
 | action_name | text  |  是 |    |  方法名称（后端） |
 | router_name | text  |  是 |    |  路由名称（前端） |
-| is_menu | text  |  number |    |  是否为菜单项（0不是 1是 默认为0） |
+| is_menu | number  |  否 |    |  是否为菜单项（0不是 1是 默认为0） |
 
 
 
