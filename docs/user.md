@@ -99,7 +99,7 @@
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | username | text  |  是 |  ceshi  |  用户名 |
 | password | text  |  是 |  123456  |  密码 |
-| role_id | text  |  是 |  2  |  用户角色 |
+| role_id | number  |  是 |  2  |  用户角色 |
 
 
 
@@ -147,8 +147,8 @@
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 | username | text  |  是 |    |  用户名 |
 | password | text  |  是 |    |  密码 |
-| role_id | text  |  是 |    |  角色ID |
-| uid | text  |  是 |    |  用户ID |
+| role_id | number  |  是 |    |  角色ID |
+| uid | number  |  是 |    |  用户ID |
 
 
 
