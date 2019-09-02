@@ -29,9 +29,9 @@
 
 #### [法律知识](https://github.com/devilkun/lawhome/blob/master/docs/knowledge.md)[2019/9/2 11:40]
 
-#### [法律专题](https://github.com/devilkun/lawhome/blob/master/docs/subject.md)[2019/8/29 13:35]
+#### [法律专题](https://github.com/devilkun/lawhome/blob/master/docs/subject.md)[2019/9/2 11:40]
 
-#### [法律百科](https://github.com/devilkun/lawhome/blob/master/docs/encyclopedia.md)[2019/8/29 13:58]
+#### [法律百科](https://github.com/devilkun/lawhome/blob/master/docs/encyclopedia.md)[2019/9/2 11:40]
 
 #### [法律法规](https://github.com/devilkun/lawhome/blob/master/docs/regulation.md)[2019/8/29 14:51]
 
