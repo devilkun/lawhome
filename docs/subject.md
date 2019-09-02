@@ -118,8 +118,8 @@
 
 | 参数名称  | 参数类型  |  是否必须 | 示例  | 备注  |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
-| first_cid | number  |  否 |    |  分类一级ID |
-| second_cid | number  |  是 |    |  分类二级ID |
+| first_cid | number  |  否 |    |  一级分类ID |
+| second_cid | number  |  是 |    |  二级分类ID |
 | title | text  |  是 |    |  法律专题主标题 |
 | summary | text  |  是 |    |  法律专题简介 |
 | picture_id | number  |  否 |    |  图片ID |
